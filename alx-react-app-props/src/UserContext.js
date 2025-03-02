@@ -5,3 +5,4 @@ const UserContext = createContext();
 
 // Export the UserContext so it can be used in other files
 export default UserContext;
+

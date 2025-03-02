@@ -9,6 +9,20 @@ import React from 'react';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
+import ProfilePage from './ProfilePage';
+import UserContext from './UserContext';
+
+function App() {
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
+
+  return (
+    // Provide the context to the ProfilePage component
+    <UserContext.Provider value={userData}>
+      <ProfilePage />
+    </UserContext.Provider>
+  );
+}
+
 
 function App() {
   return (
