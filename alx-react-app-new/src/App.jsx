@@ -47,3 +47,15 @@ const App = () => {
 
 export default App;
 
+// import React from 'react';
+import Counter from './components/Counter'; // Import the Counter component
+
+function App2() {
+  return (
+    <div>
+      <h1>Simple Counter Application</h1>
+      <Counter />  
+    </div>
+  );
+}
+
