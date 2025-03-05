@@ -23,7 +23,6 @@ function App() {
   );
 }
 
-
 function App() {
   return (
     <div>
@@ -109,4 +108,27 @@ function App() {
     </UserContext.Provider>
   );
 }
+
+// App.jsx
+// import React, { useState } from 'react';
+import UserContext from './UserContext'; // Import the UserContext
+import ProfilePage from './ProfilePage';
+
+const App = () => {
+  // Example of user data
+  const [userData, setUserData] = useState({
+    name: 'John Doe',
+    email: 'john@example.com',
+    age: 28,
+  });
+
+  return (
+    <UserContext.Provider value={userData}>
+      <ProfilePage />
+    </UserContext.Provider>
+  );
+};
+
+// export default App;
+
 

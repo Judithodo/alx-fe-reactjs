@@ -1,11 +1,15 @@
-// src/ProfilePage.jsx
+// ProfilePage.jsx
 import React from 'react';
-import UserInfo from './UserInfo';  // Import UserInfo component
+import UserDetails from './UserDetails';
 
-function ProfilePage() {
-  // No need to pass userData as a prop anymore
-  return <UserInfo />;
-}
+const ProfilePage = () => {
+  return (
+    <div>
+      <h1>Profile Page</h1>
+      <UserDetails />
+    </div>
+  );
+};
 
 export default ProfilePage;
 
