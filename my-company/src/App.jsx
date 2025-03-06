@@ -35,10 +35,10 @@ import './App.css'
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Services from './Services';
-import Contact from './Contact';
+import Home from './components/Home';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
 
 function App() {
   return (
