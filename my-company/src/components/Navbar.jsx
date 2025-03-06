@@ -21,12 +21,18 @@
 // export default Navbar;
 
 // src/Navbar.jsx
+// src/Navbar.jsx
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav style={{ padding: '10px', background: '#333', color: '#fff' }}>
-      <ul style={{ listStyleType: 'none', display: 'flex', gap: '20px' }}>
+    <nav style={{ padding: '10px', backgroundColor: '#333', color: '#fff' }}>
+      <ul style={{
+        listStyleType: 'none',
+        display: 'flex',
+        gap: '20px',
+        justifyContent: 'center'  // Added justifyContent to center the nav items
+      }}>
         {/* Link to Home page */}
         <li>
           <Link to="/" style={{ color: '#fff', textDecoration: 'none' }}>
@@ -60,3 +66,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
