@@ -1,6 +1,8 @@
 // src/pages/Profile.jsx
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import ProfileDetails from './ProfileDetails';
+import ProfileSettings from './ProfileSettings'
 
 const Profile = () => {
   return (
