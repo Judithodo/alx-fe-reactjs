@@ -3,6 +3,8 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import ProfileDetails from './ProfileDetails';
 import ProfileSettings from './ProfileSettings'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 const Profile = () => {
   return (
